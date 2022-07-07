@@ -1,0 +1,67 @@
+.grad  {
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(249,177,130);
+    background-image: linear-gradient(180deg, rgb(249,177,130), rgba(252,225,189,255),rgba(240,240,240,255));
+}
+
+.strap {
+    width: 100%;
+    height: 33%;
+    position: absolute;
+    background-color: rgb(249,177,130);
+    bottom: 5%;
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(240,240,240,255);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.topnav {
+    background-color:rgb(249,177,130) ;
+    overflow: hidden;
+    margin: 0;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+  
+    transition: width 0.2s, background-color 0.5s;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: white;
+    visibility: visible;
+    border-bottom: 2px solid white;
+    
+
+  }
