@@ -7,16 +7,6 @@
     background-image: linear-gradient(180deg, rgb(249,177,130), rgba(252,225,189,255),rgba(240,240,240,255));
 }
 
-.strap {
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    background-color: rgba(251,171,126,255);
-    bottom: 5%;
-    align-items: center;
-    display: flex;
-    
-}
 
 html {
     height: 100%;
@@ -39,11 +29,12 @@ body {
 }
 
 
+
 .menu {
   padding-left: 10%;
   padding-right: 10%;
   color: rgba(63,61,86,255);
-  font-size: 1em;
+  font-size: 300%;
   padding-top: 3em;
   padding-bottom: 3em;
   line-height: 0.7;
@@ -99,6 +90,9 @@ button{
   padding: 10%;
 }
 
+
+
+
 #img-border{
 
   height: 100%;
@@ -119,11 +113,7 @@ button{
     
 }
 
-.image_strap {
-    padding: 45px;
-    justify-content: space-around;
-    
-}
+
 #trending{
     height: 210px; 
     width: 160px; 
@@ -157,13 +147,47 @@ ul li{
   padding:1em;
   font-size:20px;
 
-
 }
 
 ul li:hover{
   color: white;
   border-bottom: 5px solid transparent;
   
+}
+
+.strap{
+  height: 80%;
+  width: 100%;
+  background-color: rgb(249,177,130);
+
+}
+
+.caption{
+  color: white;
+  font-size: 400%;
+  padding-left: 10%;
+  padding-top: 4%;
+}
+
+#image-trending{
+
+  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(143, 143, 143);
+}
+
+
+.row2 {
+
+  display: flex;
+}
+
+.column2 {
+
+  width: 150%;
+  flex: 30%;
+  padding-bottom: 15%;
+
 }
 
 
