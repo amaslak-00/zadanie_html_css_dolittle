@@ -180,16 +180,60 @@ ul li:hover{
 .row2 {
 
   display: flex;
+  padding-left: 10%;
+  padding-top: 1%;
+
+
 }
 
 .column2 {
 
   width: 150%;
   flex: 30%;
-  padding-bottom: 15%;
+  padding-bottom: 12%;
+  grid-column-start: 3;
 
 }
 
+#footer {
+  background-color: white;
+  position: relative;
+  height: 15%;
+  margin-top: 0;
+  clear: both;
+  justify-content: space-evenly;
 
+
+
+}
+
+#footer-p {
+  background-color:rgba(240,240,240,255);
+  color: grey;
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-bottom: 3%;
+  font-size: 200%;
+}
+
+.footer-icons {
+
+  display: flex;
+  padding-left: 90%;
+
+ 
+
+}
+
+ion-icon {
+  font-size: 300%;
+  color: rgb(59, 59, 97);
+}
+
+#arrow_trending {
+  font-size: 100%;
+  padding-right: 1%;
+  color: white;
+}
 
 
