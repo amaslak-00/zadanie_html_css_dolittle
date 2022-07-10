@@ -31,25 +31,38 @@ body {
 
 
 .menu {
-  padding-left: 10%;
+
+  height: 50%;
+  width: 100%;
   padding-right: 10%;
   color: rgba(63,61,86,255);
   font-size: 300%;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 10%;
+  padding-bottom: 8%;
   line-height: 0.7;
   max-width: 100%;
   max-height: 100%;
-  /*
-  -webkit-border-image: url(../../img/svg/cooking.svg);
-  background-image: url(../../img/svg/cooking.svg);
-  background-repeat:no-repeat;
-  background-position: right;
-  margin-left: 3em;
-  */
+
+
+
 }
 
+.menu-text{
+ float: left;
+ padding-left: 20%;
+ padding-top: 5%;
+ padding-left: 10%;
+ position: absolute;
+ 
+}
 
+#cooking {
+  float: left;
+  padding-left: 70%;
+  display: block;
+  position: absolute;
+  
+}
 
 #email-holder {
   font-size: 1.1em;
@@ -61,6 +74,7 @@ body {
 }
 
 button{
+
   font-size: 1.1em;
   color: white;
   background-color: rgba(251,171,126,255);
@@ -80,7 +94,8 @@ button{
 }
 
 .row {
-  display: flex;
+ display: flex;
+
 }
 
 .column {
@@ -88,10 +103,19 @@ button{
   width: 150%;
   flex: 30%;
   padding: 10%;
+
 }
 
+@keyframes shake-column {
+  0% { transform: translate(-2px, 2px); }
+  33% { transform: translate(-2px, 4px); }
+  66% { transform: translate(-4px, 4px); }
+  100% { transform: translate(-4px, 2px); }
+}
 
-
+.column:hover {
+  animation: shake-column .1s infinite alternate;
+}
 
 #img-border{
 
@@ -145,9 +169,20 @@ nav{
 ul li{
   display: inline-block; 
   padding:1em;
-  font-size:20px;
+  font-size:200%;
 
 }
+
+ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
 
 ul li:hover{
   color: white;
@@ -158,7 +193,10 @@ ul li:hover{
 .strap{
   height: 80%;
   width: 100%;
+  max-width: 100%;
+  max-height: 80%;
   background-color: rgb(249,177,130);
+
 
 }
 
@@ -174,6 +212,11 @@ ul li:hover{
   border-radius: 10px;
   border-radius: 15px;
   box-shadow: 3px 3px 3px rgb(143, 143, 143);
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
 }
 
 
@@ -193,7 +236,19 @@ ul li:hover{
   padding-bottom: 12%;
   grid-column-start: 3;
 
+
 }
+
+
+
+.column2:hover #image-trending {
+  opacity: 0.65;
+}
+
+.column2:hover .middle {
+  opacity: 1;
+}
+
 
 #footer {
   background-color: white;
@@ -220,9 +275,6 @@ ul li:hover{
 
   display: flex;
   padding-left: 90%;
-
- 
-
 }
 
 ion-icon {
@@ -237,3 +289,13 @@ ion-icon {
 }
 
 
+.img-caption{
+  position: relative;
+  font-size: 3em;
+  text-align: center;
+  color: rgb(62, 62, 108);
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
