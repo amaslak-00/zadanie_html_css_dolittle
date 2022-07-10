@@ -271,16 +271,9 @@ ul li:hover{
   font-size: 200%;
 }
 
-.footer-icons {
 
-  display: flex;
-  padding-left: 90%;
-}
 
-ion-icon {
-  font-size: 300%;
-  color: rgb(59, 59, 97);
-}
+
 
 #arrow_trending {
   font-size: 100%;
@@ -298,4 +291,39 @@ ion-icon {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.social-footer {
+  padding: 1rem;
+  background: #ffffff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 4rem;
+  color: rgb(57, 57, 109);
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: grey;
+  transition: color 0.3s ease-in;
+}
+
+.footer-copyright {
+  color: grey;
+  padding-left: 3em;
+  font-size: 2em;
 }
