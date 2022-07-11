@@ -122,7 +122,7 @@ button{
   height: 100%;
   padding-left: 20%;
   padding-right: 20%;
-  padding-bottom: 10%;
+  padding-bottom: 0%;
   padding-top: 3%;
   border-radius: 8px;
   border-color: transparent;
@@ -216,6 +216,7 @@ ul li:hover{
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
+  
 
 }
 
@@ -235,14 +236,45 @@ ul li:hover{
   flex: 30%;
   padding-bottom: 12%;
   grid-column-start: 3;
-
+  display: flex;
+  justify-content: center;
+  
 
 }
 
 
 
-.column2:hover #image-trending {
-  opacity: 0.65;
+.recipe-time{
+  position: absolute;
+  height: 50%;
+
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 300%;
+  width: 20%;
+  opacity: 0%;
+
+}
+
+.recipe-time:hover{
+  opacity: 100%;
+  width: 80%;
+  height: 70%;
+  color: white;
+}
+.essa{
+  color: white;
+  opacity: 100%;
+}
+
+
+.column2:hover  {
+ 
+  filter: brightness(50%);
 }
 
 .column2:hover .middle {
@@ -251,6 +283,8 @@ ul li:hover{
 
 
 #footer {
+  padding-top: 80%;
+  display: flex;
   background-color: white;
   position: relative;
   height: 15%;
@@ -290,6 +324,8 @@ ul li:hover{
   font-weight: bold;
   top: 50%;
   left: 50%;
+  padding-bottom: 25%;
+  padding-left: 15%;
   transform: translate(-50%, -50%);
 }
 
